@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('infoamigos.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
 
@@ -6,7 +6,7 @@ angular.module('starter.controllers', [])
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
     Chats.remove(chat);
-  }
+  };
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
@@ -17,4 +17,4 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
-});
+})
