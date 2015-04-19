@@ -2,7 +2,7 @@ angular.module('infoamigos.services', [])
 
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
-
+  'use strict';
   // Some fake testing data
   var chats = [{
     id: 0,
