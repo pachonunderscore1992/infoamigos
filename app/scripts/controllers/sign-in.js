@@ -1,12 +1,15 @@
 angular.module('infoamigos')
 
 .controller('SignInCtrl',
-   function($scope, $state, Chats) {
-      console.log(Chats.all());
-      console.log(":P");
+   function($rootScope, $scope, $state, Users) {
       $scope.signIn = function(user) {
-         console.log('Sign-In', user);
-         $state.go('tabs.home');
+         if(user && user.username && user.password) {
+            $rootScope.user = Users.login(user.username, user.password);
+            console.log($rootScope.user);
+            if($scope.user != null) {
+               $state.go('tabs.home');
+            }
+         }
       };
    }
 );

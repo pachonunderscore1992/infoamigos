@@ -96,7 +96,76 @@ angular.module('infoamigos',[
                   controller: 'AccountCtrl'
                }
             }
-         });
+         })
+         .state('tabs.topics', {
+            url: '/topics',
+            views: {
+               'tab-account': {
+                  templateUrl: 'templates/topic.html',
+                  controller: 'TopicCtrl'
+               }
+            }
+         })
+         .state('tabs.topics-create', {
+            url: '/topics/create',
+            views: {
+               'tab-account': {
+                  templateUrl: 'templates/new-materia.html',
+                  controller: 'NuevaMateriaCtrl'
+               }
+            }
+         })
+         .state('tabs.topics-sigla', {
+            url: '/topics/:sigla',
+            views: {
+               'tab-account': {
+                  templateUrl: 'templates/topic-sigla.html',
+                  controller: 'TopicSiglaCtrl'
+               }
+            }
+         })
+         .state('tabs.aulas', {
+            url: '/aulas',
+            views: {
+               'tab-account': {
+                  templateUrl: 'templates/aula.html',
+                  controller: 'AulaCtrl'
+               }
+            }
+         })
+         .state('tabs.nuevaaula', {
+            url: '/aulas/create',
+            views: {
+               'tab-account': {
+                  templateUrl: 'templates/new-aula.html',
+                  controller: 'NuevaAulaCtrl'
+               }
+            }
+         })
+         .state('tabs.eventos', {
+            url: '/eventos',
+            views: {
+               'tab-account': {
+                  templateUrl: 'templates/eventos.html',
+                  controller: 'EventoCtrl'
+               }
+            }
+         })
+         .state('tabs.nuevoevento', {
+            url: '/eventos/create',
+            views: {
+               'tab-account': {
+                  templateUrl: 'templates/new-event.html',
+                  controller: 'NuevoEventoCtrl'
+               }
+            }
+         })
+         .state('register', {
+            url: '/register',
+            templateUrl: 'templates/register.html',
+            controller: 'RegisterCtrl'
+         })
+         ;
       $urlRouterProvider.otherwise('/sign-in');
    }
 );

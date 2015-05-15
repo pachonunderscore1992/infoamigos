@@ -1,0 +1,12 @@
+<ion-view view-title="Materias">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="materia in materias" href="#/tabs/topics/{{materia.sigla}}">
+         <p class="text-center">{{materia.nombre}}</p>
+      </ion-item>
+      <ion-item href="#/tabs/topics/create">
+         <p class="text-center"> Crear</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

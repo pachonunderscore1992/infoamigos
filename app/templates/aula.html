@@ -1,0 +1,13 @@
+<ion-view view-title="Aulas">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="aula in aulas">
+         <p>{{aula.name}}</p>
+         <p>Piso {{aula.piso}}</p>
+      </ion-item>
+      <ion-item href="#/tabs/aulas/create">
+         <p class="text-center"> Crear</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

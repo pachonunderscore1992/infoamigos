@@ -1,14 +1,11 @@
-<ion-view view-title="Timeline">
+<ion-view view-title="INF - {{sigla}}">
   <ion-content header-shrink scroll-event-interval="5">
-    <h2 class="text-center">
-      Bienvenido {{user.userName}}
-    </h2>
 
     <div ng-repeat="post in posts" class="list card">
-
+<!-- 
       <div class="item item-header">
         <h2>{{post.topic}}</h2>
-      </div>
+      </div> -->
       <div class="item item-content">
         <p>{{post.name}}</p>
         <p>{{post.date}}</p>
