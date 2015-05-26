@@ -1,171 +1,113 @@
-angular.module('infoamigos',[
-   'ionic',
-   'infoamigos.services'
-])
-.config(
-   function($stateProvider, $urlRouterProvider) {
-      'use strict';
-      $stateProvider
-         .state('signin', {
-            url: '/sign-in',
-            templateUrl: 'templates/sign-in.html',
-            controller: 'SignInCtrl'
-         })
-         .state('forgotpassword', {
-            url: '/forgot-password',
-            templateUrl: 'templates/forgot-password.html'
-         })
-         .state('tabs', {
-            url: '/tabs',
-            abstract: true,
-            templateUrl: 'templates/tabs.html'
-         })
-         .state('tabs.home', {
-            url: '/home',
-            views: {
-               'home-tab': {
-                  templateUrl: 'templates/home.html',
-                  controller: 'HomeTabCtrl'
-               }
-            }
-         })
-         .state('tabs.facts', {
-            url: '/facts',
-            views: {
-               'home-tab': {
-                  templateUrl: 'templates/facts.html'
-               }
-            }
-         })
-         .state('tabs.facts2', {
-            url: '/facts2',
-            views: {
-               'home-tab': {
-                  templateUrl: 'templates/facts2.html'
-               }
-            }
-         })
-         .state('tabs.about', {
-            url: '/about',
-            views: {
-               'about-tab': {
-                  templateUrl: 'templates/about.html'
-               }
-            }
-         })
-         .state('tabs.navstack', {
-            url: '/navstack',
-            views: {
-               'about-tab': {
-                  templateUrl: 'templates/nav-stack.html'
-               }
-            }
-         })
-         .state('tabs.dash', {
-            url: '/dash',
-            views: {
-               'tab-dash': {
-                  templateUrl: 'templates/tab-dash.html',
-                  controller: 'DashCtrl'
-               }
-            }
-         })
-         .state('tabs.chats', {
-            url: '/chats',
-            views: {
-               'tab-chats': {
-                  templateUrl: 'templates/tab-chats.html',
-                  controller: 'ChatsCtrl'
-               }
-            }
-         })
-         .state('tabs.chat-detail', {
-            url: '/chats/:chatId',
-            views: {
-               'tab-chats': {
-                  templateUrl: 'templates/chat-detail.html',
-                  controller: 'ChatDetailCtrl'
-               }
-            }
-         })
-         .state('tabs.account', {
-            url: '/account',
-            views: {
-               'tab-account': {
-                  templateUrl: 'templates/tab-account.html',
-                  controller: 'AccountCtrl'
-               }
-            }
-         })
-         .state('tabs.topics', {
-            url: '/topics',
-            views: {
-               'tab-account': {
-                  templateUrl: 'templates/topic.html',
-                  controller: 'TopicCtrl'
-               }
-            }
-         })
-         .state('tabs.topics-create', {
-            url: '/topics/create',
-            views: {
-               'tab-account': {
-                  templateUrl: 'templates/new-materia.html',
-                  controller: 'NuevaMateriaCtrl'
-               }
-            }
-         })
-         .state('tabs.topics-sigla', {
-            url: '/topics/:sigla',
-            views: {
-               'tab-account': {
-                  templateUrl: 'templates/topic-sigla.html',
-                  controller: 'TopicSiglaCtrl'
-               }
-            }
-         })
-         .state('tabs.aulas', {
-            url: '/aulas',
-            views: {
-               'tab-account': {
-                  templateUrl: 'templates/aula.html',
-                  controller: 'AulaCtrl'
-               }
-            }
-         })
-         .state('tabs.nuevaaula', {
-            url: '/aulas/create',
-            views: {
-               'tab-account': {
-                  templateUrl: 'templates/new-aula.html',
-                  controller: 'NuevaAulaCtrl'
-               }
-            }
-         })
-         .state('tabs.eventos', {
-            url: '/eventos',
-            views: {
-               'tab-account': {
-                  templateUrl: 'templates/eventos.html',
-                  controller: 'EventoCtrl'
-               }
-            }
-         })
-         .state('tabs.nuevoevento', {
-            url: '/eventos/create',
-            views: {
-               'tab-account': {
-                  templateUrl: 'templates/new-event.html',
-                  controller: 'NuevoEventoCtrl'
-               }
-            }
-         })
-         .state('register', {
-            url: '/register',
-            templateUrl: 'templates/register.html',
-            controller: 'RegisterCtrl'
-         })
-         ;
-      $urlRouterProvider.otherwise('/sign-in');
-   }
-);
+angular.module('infoamigos', ['ionic'])
+
+.config(function($stateProvider, $urlRouterProvider) {
+
+  $stateProvider
+    .state('login', {
+      url: "/login",
+      templateUrl: 'templates/login.html',
+      controller: 'LoginCtrl'
+    })
+    .state('register', {
+      url: '/register',
+      templateUrl: 'templates/register.html',
+      controller: 'RegisterCtrl'
+    })
+    .state('about', {
+      url: '/about',
+      templateUrl: 'templates/about.html'
+    })
+    .state('forgot', {
+      url: '/forgot',
+      templateUrl: 'templates/forgot.html'
+    })
+    .state('app', {
+      url: "/app",
+      abstract: true,
+      templateUrl: "templates/app.html"
+    })
+    .state('app.home', {
+      url: "/home",
+      views: {
+        'appContent': {
+          templateUrl: "templates/home.html",
+          controller : "HomeCtrl"
+        }
+      }
+    })
+    .state('app.topics', {
+      url: '/topics',
+      views: {
+        'appContent': {
+          templateUrl: 'templates/topics.html',
+          controller: 'TopicsCtrl'
+        }
+      }
+    })
+    .state('app.profile', {
+      url: '/profile',
+      views: {
+        'appContent': {
+          templateUrl: 'templates/profile.html',
+          controller: 'ProfileCtrl'
+        }
+      }
+    })
+    .state('app.places', {
+      url: '/places',
+      views: {
+        'appContent': {
+          templateUrl: 'templates/places.html',
+          controller: 'PlacesCtrl'
+        }
+      }
+    })
+    .state('app.create-place', {
+      url: '/places/create',
+      views: {
+        'appContent': {
+          templateUrl: 'templates/create-place.html',
+          controller: 'CreatePlaceCtrl'
+        }
+      }
+    })
+    .state('app.events', {
+      url: '/events',
+      views: {
+        'appContent': {
+          templateUrl: 'templates/events.html',
+          controller: 'EventsCtrl'
+        }
+      }
+    })
+    .state('app.create-event', {
+      url: '/events/create',
+      views: {
+        'appContent': {
+          templateUrl: 'templates/create-event.html',
+          controller: 'CreateEventCtrl'
+        }
+      }
+    })
+    .state('app.create-topic', {
+      url: "/topics/create",
+      views: {
+        'appContent': {
+          templateUrl: 'templates/create-topic.html',
+          controller: 'CreateTopicCtrl'
+        }
+      }
+    })
+    .state('app.topic-detail', {
+      url: "/topics/:topicId",
+      views: {
+        'appContent': {
+          templateUrl: 'templates/topic-detail.html',
+          controller: 'TopicDetailCtrl'
+        }
+      }
+    })
+    ;
+
+  $urlRouterProvider.otherwise("/login");
+})

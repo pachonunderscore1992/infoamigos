@@ -499,6 +499,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/home/jose/src/ionic-starter-sidemenu/js/app.js",
+			"settings":
+			{
+				"buffer_size": 1847,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/about.html",
+			"settings":
+			{
+				"buffer_size": 336,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 4237,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/app.js",
+			"settings":
+			{
+				"buffer_size": 3755,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/C++/C++.sublime-build",
 	"build_system_choices":
@@ -590,19 +622,34 @@
 	[
 		"/home/jose/src/infoamigos",
 		"/home/jose/src/infoamigos/app",
-		"/home/jose/src/infoamigos/plugins/com.ionic.keyboard/www",
-		"/home/jose/src/infoamigos/plugins/org.apache.cordova.device-orientation/src",
-		"/home/jose/src/infoamigos/plugins/org.apache.cordova.device-orientation/src/android",
-		"/home/jose/src/infoamigos/plugins/org.apache.cordova.file/src",
-		"/home/jose/src/infoamigos/plugins/org.apache.cordova.file/src/android",
-		"/home/jose/src/infoamigos/plugins/org.apache.cordova.network-information/doc/es",
-		"/home/jose/src/infoamigos/plugins/org.apache.cordova.network-information/src/android",
-		"/home/jose/src/infoamigos/plugins/org.apache.cordova.network-information/www",
-		"/home/jose/src/infoamigos/resources/ios"
+		"/home/jose/src/infoamigos/app/templates",
+		"/home/jose/src/ionic-starter-sidemenu",
+		"/home/jose/src/ionic-starter-sidemenu/js"
 	],
 	"file_history":
 	[
+		"/home/jose/src/ionic-starter-sidemenu/templates/browse.html",
+		"/home/jose/src/infoamigos/app/templates/topics.html",
+		"/home/jose/src/infoamigos/app/index.html",
+		"/home/jose/src/ionic-starter-sidemenu/img/ionic.png",
+		"/home/jose/src/infoamigos/app/templates/tabs.html",
+		"/home/jose/src/infoamigos/app/templates/tab-menu.html",
 		"/home/jose/src/infoamigos/app/scripts/app.js",
+		"/home/jose/src/angular-fullstack-ionic-starter/dist-ionic/www/templates/tab-account.html",
+		"/home/jose/src/angular-fullstack-ionic-starter/dist-ionic/www/templates/tab-dash.html",
+		"/home/jose/src/angular-fullstack-ionic-starter/dist-ionic/www/templates/tabs.html",
+		"/home/jose/src/angular-fullstack-ionic-starter/dist-ionic/www/templates/tab-things.html",
+		"/home/jose/src/angular-fullstack-ionic-starter/dist-ionic/www/templates/thing-detail.html",
+		"/home/jose/src/infoamigos/app/templates/sign-in.html",
+		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/topics.js",
+		"/home/jose/src/infoamigos/app/templates/topic.html",
+		"/home/jose/src/infoamigos/app/templates/home.html",
+		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/menu.js",
+		"/home/jose/src/infoamigos/app/templates/tab-account.html",
+		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/topic.js",
+		"/home/jose/src/infoamigos/app/scripts/controllers/sign-in.js",
+		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/account.js",
+		"/home/jose/src/infoamigos/app/templates/aula.html",
 		"/home/jose/src/infoamigos/plugins/com.ionic.keyboard/www/keyboard.js",
 		"/home/jose/src/bicenter_backend/grails-app/services/com/alicanto/bicenter/services/UserService.groovy",
 		"/home/jose/src/bicenter_frontend/app/scripts/controllers/register.js",
@@ -664,22 +711,17 @@
 		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/DeliveryController.groovy",
 		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/PaginationUtil.groovy",
 		"/home/jose/src/infoamigos/app/scripts/services.js",
-		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/topic.js",
 		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/topicsigla.js",
 		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/home-tab.js",
 		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/nuevamateria.js",
 		"/home/jose/src/infoamigos/app/templates/new-materia.html",
-		"/home/jose/src/infoamigos/app/templates/topic.html",
-		"/home/jose/src/infoamigos/app/index.html",
 		"/home/jose/src/infoamigos/node_modules/cordova/doc/serve.txt",
 		"/home/jose/src/infoamigos/app/templates/topic-sigla.html",
 		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/nuevaaula.js",
 		"/home/jose/src/infoamigos/app/templates/new-aula.html",
-		"/home/jose/src/infoamigos/app/templates/aula.html",
 		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/nuevoevento.js",
 		"/home/jose/src/infoamigos/app/templates/new-event.html",
 		"/home/jose/src/infoamigos/app/templates/eventos.html",
-		"/home/jose/src/infoamigos/app/templates/tab-account.html",
 		"/home/jose/src/infoamigos/app/templates/facts.html",
 		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/evento.js",
 		"/home/jose/Desktop/Main.java",
@@ -713,27 +755,11 @@
 		"/home/jose/src/bicenter_backend/grails-app/conf/Config.groovy",
 		"/home/jose/src/bicenter_frontend/app/scripts/services/itemservice.js",
 		"/home/jose/src/bicenter_frontend/app/views/new-item.html",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/ItemMarshaller.groovy",
-		"/home/jose/src/bicenter_frontend/app/views/item.html",
-		"/home/jose/src/bicenter_frontend/app/scripts/controllers/items/item.js",
-		"/home/jose/src/codechef/MAY15/CHEFRP.cpp",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/SaleItemMarshaller.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/SaleMarshaller.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/PurchaseMarshaller.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/PaymentMarshaller.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/PriceMarshaller.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/OfferItemMarshaller.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/OfferMarshaller.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/DeliveryMarshaller.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/CustomerMarshaller.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/CompanyMarshaller.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/conf/spring/resources.groovy",
-		"/home/jose/src/bicenter_backend/target/work/plugins/audit-logging-1.0.4/src/java/org/codehaus/groovy/grails/plugins/orm/auditable/Stamp.java",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/MarshallingUtil.groovy"
+		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/ItemMarshaller.groovy"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -1026,14 +1052,133 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/home/jose/src/ionic-starter-sidemenu/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1721,
+								1721
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/templates/about.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 336,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								336,
+								336
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1521,
+								1521
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/scripts/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3755,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1226,
+								1226
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 32.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -1078,7 +1223,7 @@
 	"project": "infoamigos.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1088,7 +1233,51 @@
 		"selected_items":
 		[
 			[
+				"app",
+				"infoamigos/app/scripts/app.js"
+			],
+			[
 				"app.",
+				"app/scripts/app.js"
+			],
+			[
+				"si",
+				"app/templates/sign-in.html"
+			],
+			[
+				"inde",
+				"app/index.html"
+			],
+			[
+				"topic.",
+				"app/templates/topic.html"
+			],
+			[
+				"home",
+				"app/templates/home.html"
+			],
+			[
+				"index",
+				"app/index.html"
+			],
+			[
+				"accoutn",
+				"app/templates/tab-account.html"
+			],
+			[
+				"accou",
+				"app/scripts/controllers/tabs/account.js"
+			],
+			[
+				"hom",
+				"app/templates/home.html"
+			],
+			[
+				"topic.js",
+				"app/scripts/controllers/tabs/topic.js"
+			],
+			[
+				"app.js",
 				"app/scripts/app.js"
 			],
 			[
@@ -1144,10 +1333,6 @@
 				"bicenter_frontend/node_modules/grunt-contrib-uglify/node_modules/uri-path/LICENSE"
 			],
 			[
-				"inde",
-				"bicenter_frontend/app/index.html"
-			],
-			[
 				"services/us",
 				"bicenter_frontend/app/scripts/services/userservice.js"
 			],
@@ -1192,10 +1377,6 @@
 				"bicenter_frontend/app/views/register.html"
 			],
 			[
-				"index",
-				"bicenter_frontend/app/index.html"
-			],
-			[
 				"index.",
 				"bicenter_frontend/app/index.html"
 			],
@@ -1224,14 +1405,6 @@
 				"app/scripts/services.js"
 			],
 			[
-				"home",
-				"app/scripts/controllers/tabs/home-tab.js"
-			],
-			[
-				"app.js",
-				"app/scripts/app.js"
-			],
-			[
 				"topichtml",
 				"app/templates/topic.html"
 			],
@@ -1246,10 +1419,6 @@
 			[
 				"topicsi",
 				"app/scripts/controllers/tabs/topicsigla.js"
-			],
-			[
-				"topic.js",
-				"app/scripts/controllers/tabs/topic.js"
 			],
 			[
 				"topic",
@@ -1574,30 +1743,6 @@
 			[
 				"users",
 				"grails-app/services/com/alicanto/bicenter/services/UserService.groovy"
-			],
-			[
-				"usercont",
-				"grails-app/controllers/com/alicanto/bicenter/controllers/UserController.groovy"
-			],
-			[
-				"use",
-				"target/work/resources/uglifyjs/test/unit/compress/expected/strict-equals.js"
-			],
-			[
-				"user",
-				"grails-app/domain/com/alicanto/bicenter/domain/User.groovy"
-			],
-			[
-				"alica",
-				"grails-app/conf/com/alicanto/bicenter/security/AlicantoToken.groovy"
-			],
-			[
-				"sign-in.js",
-				"app/scripts/controllers/sign-in.js"
-			],
-			[
-				"userserv",
-				"bicenter_backend/grails-app/services/com/alicanto/bicenter/services/UserService.groovy"
 			]
 		],
 		"width": 0.0

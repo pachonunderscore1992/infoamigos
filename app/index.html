@@ -36,21 +36,20 @@
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <!-- Controllers -->
-    <script src="scripts/controllers/tabs/account.js"></script>
-    <script src="scripts/controllers/tabs/chat-detail.js"></script>
-    <script src="scripts/controllers/tabs/chats.js"></script>
-    <script src="scripts/controllers/tabs/dash.js"></script>
-    <script src="scripts/controllers/tabs/home-tab.js"></script>
-    <script src="scripts/controllers/sign-in.js"></script>
+    <script src="scripts/controllers/app.js"></script>
+    <script src="scripts/controllers/login.js"></script>
+    <script src="scripts/controllers/profile.js"></script>
+    <script src="scripts/controllers/home.js"></script>
     <script src="scripts/controllers/register.js"></script>
-    <script src="scripts/controllers/tabs/topic.js"></script>
-    <script src="scripts/controllers/tabs/topicsigla.js"></script>
-    <script src="scripts/controllers/tabs/aula.js"></script>
-    <script src="scripts/controllers/tabs/evento.js"></script>
-    <script src="scripts/controllers/tabs/nuevoevento.js"></script>
-    <script src="scripts/controllers/tabs/nuevaaula.js"></script>
-    <script src="scripts/controllers/tabs/nuevamateria.js"></script>
+    <script src="scripts/controllers/topics.js"></script>
+    <script src="scripts/controllers/topic-detail.js"></script>
+    <script src="scripts/controllers/places.js"></script>
+    <script src="scripts/controllers/events.js"></script>
+    <script src="scripts/controllers/create-topic.js"></script>
+    <script src="scripts/controllers/create-place.js"></script>
+    <script src="scripts/controllers/create-event.js"></script>
     <!-- Services -->
+    <!-- TODO: separate services files and integrate with backend -->
     <script src="scripts/services.js"></script>
     <script src="scripts/configuration.js"></script>
     <!-- endbuild -->
@@ -59,15 +58,13 @@
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
-    <ion-nav-bar class="bar-positive">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
-    </ion-nav-bar>
+    <div ng-controller="AppController">
+      <ion-nav-view></ion-nav-view>
+    </div>
     <!--
       The views will be rendered in the <ion-nav-view> directive below
       Templates are in the /templates folder (but you could also
       have templates inline in this html file if you'd like).
     -->
-    <ion-nav-view></ion-nav-view>
   </body>
 </html>

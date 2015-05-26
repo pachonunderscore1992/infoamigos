@@ -1,2 +1,3 @@
 agregar servicio de voz chistosa :D
 agregar tutorial http://codepen.io/ionic/pen/AjgEB
+agregar pull to refresh http://codepen.io/ionic/pen/mqolp

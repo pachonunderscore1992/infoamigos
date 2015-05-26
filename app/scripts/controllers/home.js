@@ -1,6 +1,6 @@
 angular.module('infoamigos')
 
-.controller('HomeTabCtrl',
+.controller('HomeCtrl',
    function($scope, Posts) {
       $scope.loadPosts = function(){
         $scope.posts = Posts.all('general');

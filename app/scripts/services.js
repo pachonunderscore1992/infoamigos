@@ -1,4 +1,4 @@
-angular.module('infoamigos.services', [])
+angular.module('infoamigos')
 
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
@@ -119,7 +119,10 @@ angular.module('infoamigos.services', [])
     ];
   return {
     all: function(sigla) {
-      if(sigla == 'general') return posts;
+
+      if(sigla == 'general'){
+         return posts;
+      }
       var r = [];
       for (var i = posts.length - 1; i >= 0; i--) {
         if(posts[i].topic.endsWith(sigla)) {
@@ -130,48 +133,56 @@ angular.module('infoamigos.services', [])
     }
   };
 })
-.factory('Aulas', function(){
-  var aulas = [
+.factory('Places', function(){
+  var places = [
     {
       name: 'A',
-      piso: 0
+      floor: 0
     },
     {
       name: 'E',
-      piso: 1
+      floor: 1
     }
   ];
   return {
      all: function() {
-      return aulas;
+      return places;
      },
-     create: function(aula) {
-        aulas.push(aula);
+     create: function(place) {
+        places.push(place);
      }
   };
 })
-.factory('Materias', function(){
-  var materias = [
+.factory('Topics', function(){
+  var topics = [
     {
-      sigla: '281',
-      nombre: 'Taller de Sistemas'
+      code: '281',
+      name: 'Taller de Sistemas'
     },
     {
-      sigla: '143',
-      nombre: 'Taller de Programacion'
+      code: '143',
+      name: 'Taller de Programacion'
     }
   ];
   return {
-     all: function() {
-      return materias;
+     getByCode: function(code) {
+       for (var i = topics.length - 1; i >= 0; i--) {
+         if(topics[i].code == code) {
+          return topics[i];
+         }
+       }
+       return null;
      },
-     create: function(materia) {
-        materias.push(materia);
+     all: function() {
+      return topics;
+     },
+     create: function(topic) {
+        topics.push(topic);
      }
   };
 })
-.factory('Eventos', function(){
-  var eventos  = [
+.factory('Events', function(){
+  var events  = [
     {
       name: 'Entrega de Video 281',
       description: 'Entregar el video sobre Scrum',
@@ -187,10 +198,10 @@ angular.module('infoamigos.services', [])
   ]
   return {
     all: function() {
-      return eventos;
+      return events;
     },
-    create: function(evento) {
-      eventos.push(evento);
+    create: function(event) {
+      events.push(event);
     }
   };
 })

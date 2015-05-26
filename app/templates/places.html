@@ -1,12 +1,12 @@
 <ion-view view-title="Aulas">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="aula in aulas">
-         <p>{{aula.name}}</p>
-         <p>Piso {{aula.piso}}</p>
-		 <p> horarios </p>
+      <ion-item ng-repeat="place in places">
+         <p>{{place.name}}</p>
+         <p>Piso {{place.floor}}</p>
+		     <p> horarios </p>
       </ion-item>
-      <ion-item href="#/tabs/aulas/create">
+      <ion-item href="#/app/places/create">
          <p class="text-center"> Crear</p>
       </ion-item>
     </ion-list>

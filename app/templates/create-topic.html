@@ -1,15 +1,15 @@
-<ion-view view-title="Crear Aula">
+<ion-view view-title="Crear Materia">
   <ion-content padding="true">
     <label class="item item-input">
       <span class="input-label">Nombre</span>
-      <input type="text" ng-model="materia.nombre">
+      <input type="text" ng-model="topic.name">
     </label>
     <label class="item item-input">
       <span class="input-label">Sigla</span>
-      <input type="text" ng-model="materia.sigla">
+      <input type="text" ng-model="topic.code">
     </label>
     <div class="padding">
-      <button class="button button-block button-positive" ng-click="create(materia)">
+      <button class="button button-block button-dark" ng-click="create(topic)">
         Crear
       </button>
     </div>

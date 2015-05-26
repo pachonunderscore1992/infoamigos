@@ -1,0 +1,29 @@
+<ion-nav-bar class="bar-dark">
+  <ion-nav-back-button class="button-icon ion-arrow-left-c">
+  </ion-nav-back-button>
+  <ion-view view-title="Infoamigos">
+    <ion-content>
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Usuario</span>
+          <input type="text" ng-model="user.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="user.password">
+        </label>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-dark" ng-click="signIn(user)">
+          Logearse
+        </button>
+        <p class="text-center">
+          <a href="#/forgot">Olvidaste tu password</a>
+        </p>
+        <p class="text-center">
+          <a href="#/register">Registrate</a>
+        </p>
+      </div>
+    </ion-content>
+  </ion-view>
+</ion-nav-bar>

@@ -1,0 +1,15 @@
+<ion-view view-title="Eventos">
+  <ion-content>
+    <ion-list >
+      <ion-item ng-repeat="event in events">
+         <p class="text-center">{{event.name}} </p>
+         <p class="text-center">{{event.description}} </p>
+         <p class="text-center">{{event.date | date:'fullDate'}}</p>
+         <p class="text-center">{{event.place}} </p>
+      </ion-item>
+      <ion-item class="text-center positive" href="#/app/events/create"> 
+        Crear
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

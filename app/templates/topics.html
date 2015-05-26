@@ -1,0 +1,12 @@
+<ion-view hide-back-button="false" view-title="Materias">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="topic in topics" href="#/app/topics/{{topic.code}}">
+         <p class="text-center">{{topic.name}}</p>
+      </ion-item>
+      <ion-item href="#/app/topics/create">
+         <p class="text-center"> Crear</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
