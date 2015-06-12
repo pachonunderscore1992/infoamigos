@@ -2,12 +2,12 @@
   <ion-content>
     <ion-list >
       <ion-item ng-repeat="event in events">
-         <p class="text-center">{{event.name}} </p>
+         <p class="text-center">{{event.title}} </p>
          <p class="text-center">{{event.description}} </p>
          <p class="text-center">{{event.date | date:'fullDate'}}</p>
          <p class="text-center">{{event.place}} </p>
       </ion-item>
-      <ion-item class="text-center positive" href="#/app/events/create"> 
+      <ion-item class="text-center positive" href="#/events/create"> 
         Crear
       </ion-item>
     </ion-list>

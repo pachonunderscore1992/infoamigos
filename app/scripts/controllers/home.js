@@ -1,11 +1,31 @@
 angular.module('infoamigos')
 
 .controller('HomeCtrl',
-   function($scope, Posts) {
+   function($scope, Posts, $window, Users) {
+
+    $scope.userName = $window.sessionStorage.principal;
+
       $scope.loadPosts = function(){
-        $scope.posts = Posts.all('general');
+        Posts.getAll().then(
+            function(res) {
+              $scope.posts = res.data;
+            },
+            function(error) {
+              console.log('error', error);
+            }
+          ).finally(function(){
+            $scope.$broadcast('scroll.refreshComplete');
+          });
       };
+
       $scope.loadPosts();
+
+      $scope.likeIt = function(post) {
+        var id = post.id;
+        var likes = post.likes + 1;
+        Posts.update(id, {likes: likes});
+      };
+
    }
 )
 .directive('fakeStatusbar', function() {

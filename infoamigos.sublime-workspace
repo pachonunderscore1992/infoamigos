@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"$route",
+				"$routeParams	AngularJS"
+			],
+			[
+				"pos",
+				"posts"
+			],
+			[
+				"top",
+				"topicId"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"topic",
+				"topicId"
+			],
+			[
+				"app",
+				"appContent"
+			],
+			[
+				"ion",
+				"ion-nav-view"
+			],
+			[
+				"$",
+				"$location	AngularJS"
+			],
+			[
+				"io",
+				"ion-view"
+			],
+			[
+				"to",
+				"topic"
+			],
+			[
 				"req",
 				"request"
 			],
@@ -444,10 +484,6 @@
 				"free_off"
 			],
 			[
-				"to",
-				"totP"
-			],
-			[
 				"tp",
 				"totP"
 			],
@@ -478,59 +514,11 @@
 			[
 				"dfs_",
 				"dfs_num"
-			],
-			[
-				"nu",
-				"dfs_num"
-			],
-			[
-				"dfs",
-				"dfsNumberCounter"
-			],
-			[
-				"last",
-				"lastY"
-			],
-			[
-				"las",
-				"lastY"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "/home/jose/src/ionic-starter-sidemenu/js/app.js",
-			"settings":
-			{
-				"buffer_size": 1847,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/templates/about.html",
-			"settings":
-			{
-				"buffer_size": 336,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/index.html",
-			"settings":
-			{
-				"buffer_size": 4237,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/scripts/app.js",
-			"settings":
-			{
-				"buffer_size": 3755,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/C++/C++.sublime-build",
 	"build_system_choices":
@@ -622,19 +610,88 @@
 	[
 		"/home/jose/src/infoamigos",
 		"/home/jose/src/infoamigos/app",
+		"/home/jose/src/infoamigos/app/prueba",
+		"/home/jose/src/infoamigos/app/scripts",
+		"/home/jose/src/infoamigos/app/styles",
 		"/home/jose/src/infoamigos/app/templates",
-		"/home/jose/src/ionic-starter-sidemenu",
-		"/home/jose/src/ionic-starter-sidemenu/js"
+		"/home/jose/src/infoamigos/www"
 	],
 	"file_history":
 	[
-		"/home/jose/src/ionic-starter-sidemenu/templates/browse.html",
+		"/home/jose/src/nucleus-backend/src/main/java/org/fabriquita/nucleus/popdb/TopicPopDb.java",
+		"/home/jose/src/infoamigos/app/scripts/app.js",
+		"/home/jose/src/nucleus-backend/src/main/java/org/fabriquita/nucleus/popdb/PostPopDb.java",
+		"/home/jose/src/nucleus-backend/src/main/java/org/fabriquita/nucleus/popdb/GroupPopDB.java",
+		"/home/jose/src/nucleus-backend/src/main/java/org/fabriquita/nucleus/popdb/ResourcePopDB.java",
+		"/home/jose/src/nucleus-backend/src/main/java/org/fabriquita/nucleus/popdb/RolePopDB.java",
+		"/home/jose/src/nucleus-backend/src/main/java/org/fabriquita/nucleus/popdb/RoleResourcePopDB.java",
+		"/home/jose/src/nucleus-backend/src/main/java/org/fabriquita/nucleus/popdb/UserPopDB.java",
+		"/home/jose/src/infoamigos/app/scripts/controllers/topic-comments.js",
+		"/home/jose/src/infoamigos/app/templates/home.html",
+		"/home/jose/src/infoamigos/app/scripts/services.js",
+		"/home/jose/src/infoamigos/app/scripts/controllers/topic-detail.js",
+		"/home/jose/src/infoamigos/app/templates/topic-detail.html",
+		"/home/jose/src/bicenter_backend/.git/config",
 		"/home/jose/src/infoamigos/app/templates/topics.html",
+		"/home/jose/src/infoamigos/app/templates/topic-comments.html",
+		"/home/jose/src/infoamigos/app/scripts/controllers/home.js",
+		"/home/jose/src/infoamigos/app/scripts/controllers/topics.js",
+		"/home/jose/src/infoamigos/node_modules/grunt-contrib-concat/tasks/lib/comment.js",
+		"/home/jose/src/infoamigos/platforms/android/res/xml/config.xml",
+		"/home/jose/src/infoamigos/app/scripts/controllers/profile.js",
+		"/home/jose/src/infoamigos/app/templates/profile.html",
+		"/home/jose/Desktop/res/values/strings.xml",
+		"/home/jose/src/nucleus-backend/src/main/java/org/fabriquita/nucleus/PopDB.java",
+		"/home/jose/src/infoamigos/app/scripts/controllers/place-detail.js",
+		"/home/jose/src/infoamigos/app/templates/place-detail.html",
+		"/home/jose/src/infoamigos/app/scripts/controllers/places.js",
+		"/home/jose/src/infoamigos/app/templates/places.html",
 		"/home/jose/src/infoamigos/app/index.html",
+		"/home/jose/src/infoamigos/app/templates/register.html",
+		"/home/jose/src/infoamigos/app/templates/create-place.html",
+		"/home/jose/src/infoamigos/app/scripts/controllers/login.js",
+		"/home/jose/src/infoamigos/app/templates/login.html",
+		"/home/jose/src/infoamigos/app/scripts/controllers/create-place.js",
+		"/home/jose/src/infoamigos/app/templates/create-event.html",
+		"/home/jose/src/infoamigos/app/scripts/controllers/events.js",
+		"/home/jose/src/infoamigos/app/templates/events.html",
+		"/home/jose/src/infoamigos/app/scripts/controllers/create-event.js",
+		"/home/jose/src/infoamigos/app/templates/create-topic.html",
+		"/home/jose/src/infoamigos/app/scripts/controllers/create-topic.js",
+		"/home/jose/src/infoamigos/app/templates/app.html",
+		"/home/jose/src/infoamigos/app/css/style.css",
+		"/home/jose/src/infoamigos/app/prueba/tabs.html",
+		"/home/jose/src/infoamigos/Gruntfile.js",
+		"/home/jose/src/ionic/myApp/www/js/app.js",
+		"/home/jose/src/ionic/myApp/www/index.html",
+		"/home/jose/src/ionic/myApp/www/js/services.js",
+		"/home/jose/src/ionic/myApp/www/js/controllers.js",
+		"/home/jose/src/ionic/myApp/www/templates/tabs.html",
+		"/home/jose/src/ionic/myApp/www/templates/chat-detail.html",
+		"/home/jose/src/ionic/myApp/www/templates/tab-account.html",
+		"/home/jose/src/ionic/myApp/www/templates/tab-chats.html",
+		"/home/jose/src/ionic/myApp/www/templates/tab-dash.html",
+		"/home/jose/src/angular-fullstack-ionic-starter/notes.txt",
+		"/home/jose/src/angular-fullstack-ionic-starter/client/ionic/www/js/app.js",
+		"/home/jose/src/angular-fullstack-ionic-starter/client/ionic/www/templates/tab-account.html",
+		"/home/jose/src/angular-fullstack-ionic-starter/client/ionic/www/templates/tab-dash.html",
+		"/home/jose/src/angular-fullstack-ionic-starter/client/ionic/www/templates/tabs.html",
+		"/home/jose/src/angular-fullstack-ionic-starter/client/ionic/www/templates/tab-things.html",
+		"/home/jose/src/angular-fullstack-ionic-starter/client/ionic/www/templates/thing-detail.html",
+		"/home/jose/src/angular-fullstack-ionic-starter/client/ionic/www/js/controllers.js",
+		"/home/jose/src/angular-fullstack-ionic-starter/client/ionic/www/js/services.js",
+		"/home/jose/src/infoamigos/app/templates/topic-template.html",
+		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/create-event.js",
+		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/create-place.js",
+		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/create-topic.js",
+		"/home/jose/src/ionic-starter-sidemenu/js/app.js",
+		"/home/jose/src/infoamigos/app/styles/style.css",
+		"/media/jose/CARLITOS/Avenger.java",
+		"/home/jose/src/infoamigos/app/templates/about.html",
+		"/home/jose/src/ionic-starter-sidemenu/templates/browse.html",
 		"/home/jose/src/ionic-starter-sidemenu/img/ionic.png",
 		"/home/jose/src/infoamigos/app/templates/tabs.html",
 		"/home/jose/src/infoamigos/app/templates/tab-menu.html",
-		"/home/jose/src/infoamigos/app/scripts/app.js",
 		"/home/jose/src/angular-fullstack-ionic-starter/dist-ionic/www/templates/tab-account.html",
 		"/home/jose/src/angular-fullstack-ionic-starter/dist-ionic/www/templates/tab-dash.html",
 		"/home/jose/src/angular-fullstack-ionic-starter/dist-ionic/www/templates/tabs.html",
@@ -643,7 +700,6 @@
 		"/home/jose/src/infoamigos/app/templates/sign-in.html",
 		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/topics.js",
 		"/home/jose/src/infoamigos/app/templates/topic.html",
-		"/home/jose/src/infoamigos/app/templates/home.html",
 		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/menu.js",
 		"/home/jose/src/infoamigos/app/templates/tab-account.html",
 		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/topic.js",
@@ -689,73 +745,7 @@
 		"/home/jose/Desktop/problemas/pokemon/salida.txt",
 		"/home/jose/Desktop/problemas/pokemon/gen.cpp",
 		"/home/jose/Documents/CPP/generator.cpp",
-		"/home/jose/Desktop/problemas/pokemon/entrada.txt",
-		"/home/jose/Desktop/problemas/pokemon/Main.java",
-		"/home/jose/src/codejam/2015/Round 1C/logs-1032.txt",
-		"/home/jose/Desktop/problemas/pokemon/Generador.java",
-		"/home/jose/src/topcoder/Single Round Match 659/ApplesAndOrangesEasy.cpp",
-		"/home/jose/src/topcoder/Single Round Match 659/ApplesAndOrangesEasy.sample",
-		"/home/jose/src/nucleus-backend/src/main/java/org/fabriquita/nucleus/repositories/ResourceRepository.java",
-		"/home/jose/Desktop/problemas/Avengers/Main.java",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/GroupController.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/GroupTypeController.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/OfferController.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/OfferItemController.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/PaymentController.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/PriceController.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/PurchaseController.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/RoleController.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/RoleResourceController.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/SaleController.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/SaleItemController.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/DeliveryController.groovy",
-		"/home/jose/src/bicenter_backend/grails-app/controllers/com/alicanto/bicenter/controllers/PaginationUtil.groovy",
-		"/home/jose/src/infoamigos/app/scripts/services.js",
-		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/topicsigla.js",
-		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/home-tab.js",
-		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/nuevamateria.js",
-		"/home/jose/src/infoamigos/app/templates/new-materia.html",
-		"/home/jose/src/infoamigos/node_modules/cordova/doc/serve.txt",
-		"/home/jose/src/infoamigos/app/templates/topic-sigla.html",
-		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/nuevaaula.js",
-		"/home/jose/src/infoamigos/app/templates/new-aula.html",
-		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/nuevoevento.js",
-		"/home/jose/src/infoamigos/app/templates/new-event.html",
-		"/home/jose/src/infoamigos/app/templates/eventos.html",
-		"/home/jose/src/infoamigos/app/templates/facts.html",
-		"/home/jose/src/infoamigos/app/scripts/controllers/tabs/evento.js",
-		"/home/jose/Desktop/Main.java",
-		"/home/jose/Desktop/EjemploMapas.java",
-		"/home/jose/Desktop/Avenger.java",
-		"/home/jose/Desktop/Main.groovy",
-		"/home/jose/workspace/Sesión14/código Java/src/Renderiza.java",
-		"/media/jose/K__W__S/Untitled Folder/sampleProjects/min3dSampleProject1/src/min3d/sampleProject1/ExampleLoadObjFile.java",
-		"/media/jose/K__W__S/Untitled Folder/MainActivity.java",
-		"/home/jose/src/codechef/MAY15/in",
-		"/home/jose/src/codechef/MAY15/CHAPD.cpp",
-		"/home/jose/src/codechef/MAY15/SETDIFF.cpp",
-		"/home/jose/src/codejam/2015/Round 1C/A.cpp",
-		"/home/jose/untitled3.obj",
-		"/home/jose/src/codejam/2015/Round 1C/B-large.cpp",
-		"/home/jose/src/codejam/2015/Round 1C/in",
-		"/home/jose/src/codejam/2015/Round 1C/B-small-attempt0x.out",
-		"/home/jose/resources/Codigos/CP2 codes/ch6/ch6_01_kmp.cpp",
-		"/home/jose/src/codejam/2015/Round 1C/B.cpp",
-		"/home/jose/src/codejam/2015/Round 1C/C-small-attempt2x.out",
-		"/home/jose/src/codejam/2015/Round 1C/C-large.cpp",
-		"/home/jose/src/codejam/2015/Round 1C/C.cpp",
-		"/home/jose/src/codejam/2015/Round 1C/sub-3.out",
-		"/home/jose/src/codejam/2015/Round 1C/A-small-attempt0.out",
-		"/home/jose/src/codejam/2015/Round 1C/A-large.out",
-		"/home/jose/src/codejam/2015/Round 1C/A-small-attempt0.in",
-		"/home/jose/src/codejam/B.cpp",
-		"/home/jose/src/codejam/B-small-practice.out",
-		"/home/jose/src/bicenter_backend/grails-app/domain/com/alicanto/bicenter/domain/Item.groovy",
-		"/home/jose/src/bicenter_frontend/app/scripts/controllers/items/new-item.js",
-		"/home/jose/src/bicenter_backend/grails-app/conf/Config.groovy",
-		"/home/jose/src/bicenter_frontend/app/scripts/services/itemservice.js",
-		"/home/jose/src/bicenter_frontend/app/views/new-item.html",
-		"/home/jose/src/bicenter_backend/grails-app/marshallers/com/alicanto/bicenter/marshallers/ItemMarshaller.groovy"
+		"/home/jose/Desktop/problemas/pokemon/entrada.txt"
 	],
 	"find":
 	{
@@ -784,6 +774,37 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"scope.users",
+			"id",
+			"auth",
+			"Comment",
+			"Posts",
+			"Post",
+			"post",
+			"Post",
+			"posts",
+			"Topic",
+			"topic",
+			"post",
+			"topic",
+			"Topic",
+			"event",
+			"Event",
+			"post",
+			"Post",
+			"posts",
+			"scope.posts",
+			"topic",
+			"_.",
+			"_",
+			"tab",
+			"home-tab",
+			"topics",
+			"item",
+			"event",
+			"places",
+			"topics",
+			"topic",
 			"sign",
 			"'",
 			"();",
@@ -880,38 +901,7 @@
 			"aho",
 			"sign",
 			"date",
-			"Acerca",
-			"v",
-			"map",
-			"message",
-			"monster",
-			"RenderActivity.java",
-			"RenderActivity",
-			"_baseSourcePath",
-			"/*",
-			"contexto",
-			"float",
-			"lib",
-			"img",
-			"      \n",
-			":O",
-			"h",
-			"Q[head]",
-			":O",
-			"mesh",
-			"sw",
-			"      \n",
-			"remLessers",
-			"remlesser",
-			"      \n",
-			"rem",
-			"Total",
-			"EMAIL",
-			"user",
-			"alicanto",
-			"ser",
-			"chatProvider",
-			"costoPersona"
+			"Acerca"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -919,6 +909,16 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Comment",
+			"comment",
+			"Comment",
+			"Place",
+			"place",
+			"Place",
+			"topic",
+			"Topic",
+			"topic",
+			"Topic",
 			"\"",
 			"groupType",
 			"GroupType",
@@ -1036,12 +1036,7 @@
 			"f",
 			"num",
 			"y[i]",
-			"x[i]",
-			"o",
-			",",
-			"",
-			"double",
-			"dfs"
+			"x[i]"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1052,133 +1047,14 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/home/jose/src/ionic-starter-sidemenu/js/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1847,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1721,
-								1721
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/templates/about.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 336,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								336,
-								336
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4237,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1521,
-								1521
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/scripts/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3755,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1226,
-								1226
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 360.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -1223,7 +1099,7 @@
 	"project": "infoamigos.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1234,27 +1110,271 @@
 		[
 			[
 				"app",
-				"infoamigos/app/scripts/app.js"
+				"app/scripts/app.js"
 			],
 			[
 				"app.",
 				"app/scripts/app.js"
 			],
 			[
-				"si",
-				"app/templates/sign-in.html"
+				"comment",
+				"app/scripts/controllers/topic-comments.js"
+			],
+			[
+				"servi",
+				"app/scripts/services.js"
+			],
+			[
+				"topicde",
+				"app/templates/topic-detail.html"
+			],
+			[
+				"home.",
+				"app/templates/home.html"
+			],
+			[
+				"home.j",
+				"app/scripts/controllers/home.js"
+			],
+			[
+				"topic-com",
+				"app/scripts/controllers/topic-comments.js"
+			],
+			[
+				"comme",
+				"node_modules/grunt-contrib-concat/tasks/lib/comment.js"
+			],
+			[
+				"topic.js",
+				"app/scripts/controllers/topics.js"
+			],
+			[
+				"home.js",
+				"app/scripts/controllers/home.js"
+			],
+			[
+				"topic",
+				"app/templates/topics.html"
+			],
+			[
+				"hom",
+				"app/templates/home.html"
+			],
+			[
+				"ap",
+				"app/scripts/app.js"
+			],
+			[
+				"ser",
+				"app/scripts/services.js"
+			],
+			[
+				"prof",
+				"app/templates/profile.html"
+			],
+			[
+				"profile.js",
+				"app/scripts/controllers/profile.js"
+			],
+			[
+				"topicdeta",
+				"app/scripts/controllers/topic-detail.js"
+			],
+			[
+				"topics.js",
+				"app/scripts/controllers/topics.js"
 			],
 			[
 				"inde",
 				"app/index.html"
 			],
 			[
-				"topic.",
-				"app/templates/topic.html"
+				"place",
+				"app/scripts/controllers/places.js"
+			],
+			[
+				"regise",
+				"app/templates/register.html"
+			],
+			[
+				"createpl",
+				"app/templates/create-place.html"
 			],
 			[
 				"home",
 				"app/templates/home.html"
+			],
+			[
+				"login.",
+				"app/templates/login.html"
+			],
+			[
+				"topiccom",
+				"app/templates/topic-comments.html"
+			],
+			[
+				"",
+				"app/scripts/controllers/topic-comments.js"
+			],
+			[
+				"home.h",
+				"app/templates/home.html"
+			],
+			[
+				"serv",
+				"app/scripts/services.js"
+			],
+			[
+				"topics",
+				"app/templates/topics.html"
+			],
+			[
+				"createplace",
+				"app/scripts/controllers/create-place.js"
+			],
+			[
+				"createhtm",
+				"app/templates/create-event.html"
+			],
+			[
+				"event",
+				"app/scripts/controllers/events.js"
+			],
+			[
+				"createeventjs",
+				"app/scripts/controllers/create-event.js"
+			],
+			[
+				"create",
+				"app/templates/create-event.html"
+			],
+			[
+				"createtopic",
+				"app/scripts/controllers/create-topic.js"
+			],
+			[
+				"createto",
+				"app/templates/create-topic.html"
+			],
+			[
+				"topicdeta.js",
+				"app/scripts/controllers/topic-detail.js"
+			],
+			[
+				"servic",
+				"app/scripts/services.js"
+			],
+			[
+				"sty",
+				"app/css/style.css"
+			],
+			[
+				"profi",
+				"app/templates/profile.html"
+			],
+			[
+				"topicdet",
+				"app/templates/topic-detail.html"
+			],
+			[
+				"gruntfi",
+				"Gruntfile.js"
+			],
+			[
+				"index.",
+				"app/index.html"
+			],
+			[
+				"tpics",
+				"app/templates/topics.html"
+			],
+			[
+				"tabs",
+				"app/prueba/tabs.html"
+			],
+			[
+				"login.j",
+				"app/scripts/controllers/login.js"
+			],
+			[
+				"login",
+				"app/templates/login.html"
+			],
+			[
+				"app.h",
+				"app/templates/app.html"
+			],
+			[
+				"topic-d",
+				"app/templates/topic-detail.html"
+			],
+			[
+				"logi",
+				"app/templates/login.html"
+			],
+			[
+				"t",
+				"app/scripts/controllers/topics.js"
+			],
+			[
+				"detail",
+				"app/templates/topic-detail.html"
+			],
+			[
+				"app.js",
+				"app/scripts/app.js"
+			],
+			[
+				"registe",
+				"app/templates/register.html"
+			],
+			[
+				"events",
+				"app/templates/events.html"
+			],
+			[
+				"create-e",
+				"app/templates/create-event.html"
+			],
+			[
+				"crea-pl",
+				"app/templates/create-place.html"
+			],
+			[
+				"places",
+				"app/templates/places.html"
+			],
+			[
+				"crea",
+				"app/templates/create-topic.html"
+			],
+			[
+				"topics.",
+				"infoamigos/app/templates/topics.html"
+			],
+			[
+				"app.htm",
+				"infoamigos/app/templates/app.html"
+			],
+			[
+				"topic-de",
+				"infoamigos/app/scripts/controllers/topic-detail.js"
+			],
+			[
+				"topi",
+				"infoamigos/app/templates/topics.html"
+			],
+			[
+				"topic.j",
+				"infoamigos/app/scripts/controllers/topics.js"
+			],
+			[
+				"si",
+				"app/templates/sign-in.html"
+			],
+			[
+				"topic.",
+				"app/templates/topic.html"
 			],
 			[
 				"index",
@@ -1269,28 +1389,12 @@
 				"app/scripts/controllers/tabs/account.js"
 			],
 			[
-				"hom",
-				"app/templates/home.html"
-			],
-			[
-				"topic.js",
-				"app/scripts/controllers/tabs/topic.js"
-			],
-			[
-				"app.js",
-				"app/scripts/app.js"
-			],
-			[
 				"config.",
 				"bicenter_frontend/app/scripts/i18n/config.js"
 			],
 			[
 				"register.h",
 				"bicenter_frontend/app/views/register.html"
-			],
-			[
-				"",
-				"bicenter_frontend/app/scripts/controllers/register.js"
 			],
 			[
 				"register.js",
@@ -1377,14 +1481,6 @@
 				"bicenter_frontend/app/views/register.html"
 			],
 			[
-				"index.",
-				"bicenter_frontend/app/index.html"
-			],
-			[
-				"login.",
-				"bicenter_frontend/app/views/login.html"
-			],
-			[
 				"itemjs",
 				"bicenter_frontend/test/spec/controllers/item.js"
 			],
@@ -1401,10 +1497,6 @@
 				"grails-app/services/com/alicanto/bicenter/services/CompanyService.groovy"
 			],
 			[
-				"ser",
-				"app/scripts/services.js"
-			],
-			[
 				"topichtml",
 				"app/templates/topic.html"
 			],
@@ -1419,10 +1511,6 @@
 			[
 				"topicsi",
 				"app/scripts/controllers/tabs/topicsigla.js"
-			],
-			[
-				"topic",
-				"app/templates/topic.html"
 			],
 			[
 				"service",
@@ -1531,218 +1619,6 @@
 			[
 				"customerm",
 				"grails-app/marshallers/com/alicanto/bicenter/marshallers/CustomerMarshaller.groovy"
-			],
-			[
-				"cnfig",
-				"grails-app/conf/Config.groovy"
-			],
-			[
-				"reso",
-				"grails-app/conf/spring/resources.groovy"
-			],
-			[
-				"companyma",
-				"grails-app/marshallers/com/alicanto/bicenter/marshallers/CompanyMarshaller.groovy"
-			],
-			[
-				"compan",
-				"grails-app/marshallers/com/alicanto/bicenter/marshallers/CompanyMarshaller.groovy"
-			],
-			[
-				"muti",
-				"grails-app/marshallers/com/alicanto/bicenter/marshallers/MarshallingUtil.groovy"
-			],
-			[
-				"userco",
-				"grails-app/controllers/com/alicanto/bicenter/controllers/UserController.groovy"
-			],
-			[
-				"util",
-				"grails-app/marshallers/com/alicanto/bicenter/marshallers/MarshallingUtil.groovy"
-			],
-			[
-				"compa",
-				"grails-app/domain/com/alicanto/bicenter/domain/Company.groovy"
-			],
-			[
-				"rchase",
-				"grails-app/domain/com/alicanto/bicenter/domain/Purchase.groovy"
-			],
-			[
-				"comp",
-				"grails-app/domain/com/alicanto/bicenter/domain/Company.groovy"
-			],
-			[
-				"boo",
-				"grails-app/conf/BootStrap.groovy"
-			],
-			[
-				"saleit",
-				"grails-app/domain/com/alicanto/bicenter/domain/SaleItem.groovy"
-			],
-			[
-				"sale.",
-				"grails-app/domain/com/alicanto/bicenter/domain/Sale.groovy"
-			],
-			[
-				"rolere",
-				"grails-app/domain/com/alicanto/bicenter/domain/RoleResource.groovy"
-			],
-			[
-				"rolereso",
-				"grails-app/domain/com/alicanto/bicenter/domain/RoleResource.groovy"
-			],
-			[
-				"rle.",
-				"grails-app/domain/com/alicanto/bicenter/domain/Role.groovy"
-			],
-			[
-				"marsh",
-				"grails-app/marshallers/com/alicanto/bicenter/marshallers/MarshallingUtil.groovy"
-			],
-			[
-				"resou",
-				"grails-app/domain/com/alicanto/bicenter/domain/Resource.groovy"
-			],
-			[
-				"purch",
-				"grails-app/domain/com/alicanto/bicenter/domain/Purchase.groovy"
-			],
-			[
-				"pri",
-				"grails-app/domain/com/alicanto/bicenter/domain/Price.groovy"
-			],
-			[
-				"price",
-				"grails-app/domain/com/alicanto/bicenter/domain/Price.groovy"
-			],
-			[
-				"payment",
-				"grails-app/domain/com/alicanto/bicenter/domain/Payment.groovy"
-			],
-			[
-				"urls",
-				"grails-app/conf/UrlMappings.groovy"
-			],
-			[
-				"offerit",
-				"grails-app/domain/com/alicanto/bicenter/domain/OfferItem.groovy"
-			],
-			[
-				"offer",
-				"grails-app/domain/com/alicanto/bicenter/domain/Offer.groovy"
-			],
-			[
-				"saleitem",
-				"grails-app/domain/com/alicanto/bicenter/domain/SaleItem.groovy"
-			],
-			[
-				"saleitems",
-				"grails-app/services/com/alicanto/bicenter/services/SaleItemService.groovy"
-			],
-			[
-				"itemcon",
-				"grails-app/controllers/com/alicanto/bicenter/controllers/ItemController.groovy"
-			],
-			[
-				"item.",
-				"grails-app/domain/com/alicanto/bicenter/domain/Item.groovy"
-			],
-			[
-				"mar",
-				"grails-app/marshallers/com/alicanto/bicenter/marshallers/MarshallingUtil.groovy"
-			],
-			[
-				"group",
-				"grails-app/domain/com/alicanto/bicenter/domain/Group.groovy"
-			],
-			[
-				"delivery",
-				"grails-app/domain/com/alicanto/bicenter/domain/Delivery.groovy"
-			],
-			[
-				"customerma",
-				"grails-app/marshallers/com/alicanto/bicenter/marshallers/CustomerMarshaller.groovy"
-			],
-			[
-				"user.",
-				"grails-app/domain/com/alicanto/bicenter/domain/User.groovy"
-			],
-			[
-				"eventos.h",
-				"app/templates/eventos.html"
-			],
-			[
-				"accout",
-				"app/templates/tab-account.html"
-			],
-			[
-				"aulas",
-				"app/scripts/controllers/tabs/aula.js"
-			],
-			[
-				"aula.",
-				"app/templates/aula.html"
-			],
-			[
-				"home.js",
-				"app/scripts/controllers/tabs/home-tab.js"
-			],
-			[
-				"ap",
-				"app/scripts/app.js"
-			],
-			[
-				"h",
-				"app/templates/home.html"
-			],
-			[
-				"index.h",
-				"bicenter_frontend/app/index.html"
-			],
-			[
-				"drop",
-				"bicenter_frontend/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"
-			],
-			[
-				"item.goo",
-				"bicenter_backend/grails-app/domain/com/alicanto/bicenter/domain/Item.groovy"
-			],
-			[
-				"home.",
-				"app/scripts/controllers/tabs/home-tab.js"
-			],
-			[
-				"sign",
-				"app/scripts/controllers/sign-in.js"
-			],
-			[
-				"in",
-				"in"
-			],
-			[
-				"a-m",
-				"A-small.cpp"
-			],
-			[
-				"a",
-				"A-small.cpp"
-			],
-			[
-				"repor",
-				"app/views/sale/report.html"
-			],
-			[
-				"login",
-				"app/views/login.html"
-			],
-			[
-				"alican",
-				"grails-app/conf/com/alicanto/bicenter/security/AlicantoToken.groovy"
-			],
-			[
-				"users",
-				"grails-app/services/com/alicanto/bicenter/services/UserService.groovy"
 			]
 		],
 		"width": 0.0
@@ -1771,7 +1647,7 @@
 				"UrlMappings"
 			]
 		],
-		"width": 755.0
+		"width": 440.0
 	},
 	"selected_group": 0,
 	"settings":

@@ -4,7 +4,7 @@ angular.module('infoamigos')
    function($scope, $state, Topics) {
       $scope.create = function(topic) {
          Topics.create(topic);
-         $state.go('app.topics');
+         $state.go('topics');
       };
    }
 );

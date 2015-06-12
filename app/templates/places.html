@@ -1,14 +1,10 @@
 <ion-view view-title="Aulas">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="place in places">
+      <ion-item ng-repeat="place in places" ng-href="#/place/{{place.id}}">
          <p>{{place.name}}</p>
-         <p>Piso {{place.floor}}</p>
-		     <p> horarios </p>
-      </ion-item>
-      <ion-item href="#/app/places/create">
-         <p class="text-center"> Crear</p>
-      </ion-item>
+         <p>{{place.address}}</p>
+      </ion-item> 
     </ion-list>
   </ion-content>
 </ion-view>

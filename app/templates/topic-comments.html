@@ -1,0 +1,16 @@
+<ion-view view-title="Materias">
+  <ion-content>
+    <ion-refresher pulling-text="Pull to refresh..." on-refresh="loadComments()"></ion-refresher>
+    <div class="card">
+      <div class="item item-text-wrap">
+         <input type="text" placeholder="comenta algo" ng-model="data.content"/>
+         <button ng-click="doComment()">comment</button>
+      </div>
+    </div>
+    <div class="card" ng-repeat="comment in comments">
+      <div class="item item-text-wrap">
+        <p> {{comment.content}} </p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

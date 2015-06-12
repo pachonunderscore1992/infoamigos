@@ -1,15 +1,44 @@
 angular.module('infoamigos')
 
 .controller('TopicDetailCtrl',
-   function($scope, $stateParams, Posts, Topics) {
+  function($scope, $stateParams, Posts, Topics) {
+
       $scope.topicId = $stateParams.topicId;
-      $scope.loadTopic = function() {
-         $scope.topic = Topics.getByCode($scope.topicId);
+
+      $scope.data = {
+         topic_id: $scope.topicId
       };
+
       $scope.loadPosts = function(){
-        $scope.posts = Posts.all($scope.topicId);
+         Topics.getPosts($scope.topicId).then(
+            function(res) {
+               $scope.posts = res.data;
+            },
+            function(error){
+               console.log('error',error);
+            }
+         ).finally(
+            function(){
+            $scope.$broadcast('scroll.refreshComplete');
+          }
+         );
       };
-      $scope.loadTopic();
       $scope.loadPosts();
+    
+      $scope.createPost = function() {
+        Posts.create($scope.data).then(
+            function(res){
+               console.log(res);
+               $scope.loadPosts();
+            },
+            function(error){
+               console.log('error',error);
+            }
+          ).finally(function(){
+               $scope.data = {
+                  topic_id: $scope.topicId
+               };
+          });
+      };
    }
 );

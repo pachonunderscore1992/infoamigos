@@ -3,7 +3,14 @@ angular.module('infoamigos')
 .controller('PlacesCtrl',
    function($scope, Places) {
       $scope.loadPlaces = function() {
-         $scope.places = Places.all();
+         Places.getAll().then(
+            function(res) {
+               $scope.places = res.data;
+            },
+            function(error){
+               console.log('error', error);
+            }
+         );
       }
       $scope.loadPlaces();
    }

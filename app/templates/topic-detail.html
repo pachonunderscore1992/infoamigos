@@ -1,10 +1,23 @@
-<ion-view view-title=" {{topic.name}} ">
+<ion-view view-title="Topic Detail">
   <ion-content>
+    <ion-refresher pulling-text="Pull to refresh..." on-refresh="loadPosts()"></ion-refresher>
+    <div>
+      <div class="item item-content">
+        <input type="text" placeholder="Comparte algo" ng-model="data.content">
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" ng-click="createPost()">
+          <i class="icon ion-share"></i>
+          Share
+        </a>
+      </div>
+    </div>
+
     <div ng-repeat="post in posts" class="list card">
 
       <div class="item item-content">
-        <p>{{post.name}}</p>
-        <p>{{post.date}}</p>
+        <p>{{post.title}}</p>
+        <p>{{post.date | date}}</p>
       </div>
 
       <div class="item item-body">
@@ -22,7 +35,7 @@
           <i class="icon ion-thumbsup"></i>
           Like
         </a>
-        <a class="tab-item" href="#">
+        <a class="tab-item" href="#/topics/{{post.topic.id}}/post/{{post.id}}">
           <i class="icon ion-chatbox"></i>
           Comment
         </a>

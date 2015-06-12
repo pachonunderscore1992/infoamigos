@@ -1,207 +1,195 @@
 angular.module('infoamigos')
 
-.factory('Chats', function() {
-  // Might use a resource here that returns a JSON array
-  'use strict';
-  // Some fake testing data
-  var chats = [{
-    id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
-  }, {
-    id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
-  }, {
-    id: 2,
-    name: 'Andrew Jostlin',
-    lastText: 'Did you get the ice cream?',
-    face: 'https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg'
-  }, {
-    id: 3,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-  }, {
-    id: 4,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'https://pbs.twimg.com/profile_images/491995398135767040/ie2Z_V6e.jpeg'
-  }];
-
+.factory('Users', function($rootScope, $window, $http){
   return {
-    all: function() {
-      return chats;
-    },
-    remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
-    },
-    get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId)) {
-          return chats[i];
-        }
+      create: function(data) {
+        console.log(data);
+        return $http.put($rootScope.getBackendUrl() + 'user/', data, {
+          //TODO: refactor this
+          headers: {
+            credentials: $window.sessionStorage.credentials,
+            principal: $window.sessionStorage.principal
+          }
+        });
+      },
+      update: function(id, data) {
+        return $http.post($rootScope.getBackendUrl() + 'user/' + id, data, {
+          //TODO: refactor this
+          headers: {
+            credentials: $window.sessionStorage.credentials,
+            principal: $window.sessionStorage.principal
+          }
+        });
+      },
+      delete: function(id) {
+        return $http.delete($rootScope.getBackendUrl() + 'user/' + id);
+      },
+      getAll: function(page, size) {
+        return $http.get($rootScope.getBackendUrl() + 'user/' + '?page=' + (page || 0) + '&size=' + (size || 10), {
+          //TODO: refactor this
+          headers: {
+            credentials: $window.sessionStorage.credentials,
+            principal: $window.sessionStorage.principal
+          }
+        });
+      },
+      get: function(id) {
+        return $http.get($rootScope.getBackendUrl() + 'user/' + id, {
+          //TODO: refactor this
+          headers: {
+            credentials: $window.sessionStorage.credentials,
+            principal: $window.sessionStorage.principal
+          }
+        });
       }
-      return null;
-    }
-  };
+    };
 })
-.factory('Users', function(){
-  var users = [{
-    id : 1,
-    firstName : 'Jose',
-    lastName : 'Laura',
-    userName : 'pachon',
-    password : 'none',
-    email: 'pachon@infoamigos.com'
-  },{
-    id : 2,
-    firstName : 'Javier',
-    lastName : 'Aruquipa',
-    userName : 'pato',
-    password : 'none',
-    email: 'pato@infoamigos.com'
-  }, {
-    id: 3,
-    firstName : 'Diego',
-    lastName : 'Ticona',
-    userName : 'ben',
-    password : '123',
-    email: 'ben@infoamigos.com'
-  }
-
-  ];
+.factory('Posts', function($rootScope, $window, $http){
   return {
-    all: function() {
-      return users;
-    },
-    login: function(userName, password) {
-      for (var i = 0; i < users.length; i++) {
-        if (users[i].userName === userName && users[i].password === password) {
-          return users[i];
-        }
+      getAll: function() {
+         return $http.get($rootScope.getBackendUrl() + 'post/', {
+          //TODO: refactor this
+          headers: {
+            credentials: $window.sessionStorage.credentials,
+            principal: $window.sessionStorage.principal
+          }
+         });
+      },
+      getComments: function(id) {
+         return $http.get($rootScope.getBackendUrl() + 'post/' + id + '/comments', {
+          //TODO: refactor this
+          headers: {
+            credentials: $window.sessionStorage.credentials,
+            principal: $window.sessionStorage.principal
+          }
+         });
+      },
+      create: function(data) {
+         data.title = $window.sessionStorage.principal;
+         return $http.put($rootScope.getBackendUrl() + 'post/', data, {
+          //TODO: refactor this
+          headers: {
+            credentials: $window.sessionStorage.credentials,
+            principal: $window.sessionStorage.principal
+          }
+         });
+      },
+      update: function(id, data) {
+        return $http.post($rootScope.getBackendUrl() + 'post/' + id, data, {
+          //TODO: refactor this
+          headers: {
+            credentials: $window.sessionStorage.credentials,
+            principal: $window.sessionStorage.principal
+          }
+        });
       }
-      return null;
-    },
-    signUp: function(user) {
-      users.push(user);
-    }
-  };
+   };
 })
-.factory('Posts', function(){
-  var posts = [
-    {
-      topic: 'INF 281',
-      name: 'Pato',
-      date: 'Hoy, 11:31',
-      content: 'No se olviden hacer la tarea :D',
-      likes: 5,
-      comments: 1
-    },
-    {
-      topic: 'INF 281',
-      name: 'Ben',
-      date: 'Hoy, 12:00',
-      content: 'Hoy es la presentacion de Scrum',
-      likes: 1,
-      comments: 0
-    },
-    {
-      topic: 'INF 143',
-      name: 'Yama',
-      date: 'Ayer, 17:31',
-      content: 'Pero es facil xD',
-      likes: 10,
-      comments: 0
-    }
-    ];
+.factory('Places', function($rootScope, $window, $http){
   return {
-    all: function(sigla) {
-
-      if(sigla == 'general'){
-         return posts;
-      }
-      var r = [];
-      for (var i = posts.length - 1; i >= 0; i--) {
-        if(posts[i].topic.endsWith(sigla)) {
-          r.push(posts[i]);
+    get: function(id) {
+      return $http.get($rootScope.getBackendUrl() + 'place/' + id, {
+        //TODO: refactor this
+        headers: {
+          credentials: $window.sessionStorage.credentials,
+          principal: $window.sessionStorage.principal
         }
-      };
-      return r;
+       });
+    },
+    getAll: function() {
+       return $http.get($rootScope.getBackendUrl() + 'place/', {
+        //TODO: refactor this
+        headers: {
+          credentials: $window.sessionStorage.credentials,
+          principal: $window.sessionStorage.principal
+        }
+       });
+    },
+    create: function(data) {
+       return $http.put($rootScope.getBackendUrl() + 'place/', data, {
+        //TODO: refactor this
+        headers: {
+          credentials: $window.sessionStorage.credentials,
+          principal: $window.sessionStorage.principal
+        }
+       });
     }
   };
 })
-.factory('Places', function(){
-  var places = [
-    {
-      name: 'A',
-      floor: 0
-    },
-    {
-      name: 'E',
-      floor: 1
-    }
-  ];
+.factory('Topics', function($rootScope, $http, $window){
   return {
-     all: function() {
-      return places;
-     },
-     create: function(place) {
-        places.push(place);
-     }
+     getAll: function() {
+         return $http.get($rootScope.getBackendUrl() + 'topic/', {
+          //TODO: refactor this
+          headers: {
+            credentials: $window.sessionStorage.credentials,
+            principal: $window.sessionStorage.principal
+          }
+         });
+      },
+      getPosts: function(id) {
+          return $http.get($rootScope.getBackendUrl() + 'topic/' + id + '/posts', {
+          //TODO: refactor this
+          headers: {
+            credentials: $window.sessionStorage.credentials,
+            principal: $window.sessionStorage.principal
+          }
+        });
+      },
+      create: function(data) {
+         data.title = $window.sessionStorage.principal;
+         return $http.put($rootScope.getBackendUrl() + 'topic/', data, {
+        //TODO: refactor this
+          headers: {
+            credentials: $window.sessionStorage.credentials,
+            principal: $window.sessionStorage.principal
+          }
+         });
+      },
+      update: function(data) {
+        return $http.post($rootScope.getBackendUrl() + 'topic/' + data.id, data, {
+        //TODO: refactor this
+          headers: {
+            credentials: $window.sessionStorage.credentials,
+            principal: $window.sessionStorage.principal
+          }
+        });
+      }
   };
 })
-.factory('Topics', function(){
-  var topics = [
-    {
-      code: '281',
-      name: 'Taller de Sistemas'
-    },
-    {
-      code: '143',
-      name: 'Taller de Programacion'
-    }
-  ];
+.factory('Events', function($rootScope, $window, $http){
   return {
-     getByCode: function(code) {
-       for (var i = topics.length - 1; i >= 0; i--) {
-         if(topics[i].code == code) {
-          return topics[i];
-         }
-       }
-       return null;
-     },
-     all: function() {
-      return topics;
-     },
-     create: function(topic) {
-        topics.push(topic);
-     }
+    getAll: function() {
+       return $http.get($rootScope.getBackendUrl() + 'event/', {
+        //TODO: refactor this
+        headers: {
+          credentials: $window.sessionStorage.credentials,
+          principal: $window.sessionStorage.principal
+        }
+       });
+    },
+    create: function(data) {
+      return $http.put($rootScope.getBackendUrl() + 'event/', data, {
+        //TODO: refactor this
+        headers: {
+          credentials: $window.sessionStorage.credentials,
+          principal: $window.sessionStorage.principal
+        }
+      });
+    }
   };
 })
-.factory('Events', function(){
-  var events  = [
-    {
-      name: 'Entrega de Video 281',
-      description: 'Entregar el video sobre Scrum',
-      date: '5 mayo 2015',
-      place: 'Laboratorio Basico'
-    },
-    {
-      name: 'Feriado por el Dia del Trabajador',
-      description: 'Feriado',
-      date: '1 mayo 2015',
-      place: 'Carrera de Informatica'
-    }
-  ]
+.factory('Comments', function($rootScope, $window, $http){
   return {
-    all: function() {
-      return events;
-    },
-    create: function(event) {
-      events.push(event);
+    create: function(data) {
+      return $http.put($rootScope.getBackendUrl() + 'comment/', data, {
+        //TODO: refactor this
+        headers: {
+          credentials: $window.sessionStorage.credentials,
+          principal: $window.sessionStorage.principal
+        }
+      }); 
     }
   };
 })
+;

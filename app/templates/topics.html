@@ -1,10 +1,11 @@
-<ion-view hide-back-button="false" view-title="Materias">
+<ion-view view-title="Materias">
   <ion-content>
+    <ion-refresher pulling-text="Pull to refresh..." on-refresh="loadTopics()"></ion-refresher>
     <ion-list>
-      <ion-item ng-repeat="topic in topics" href="#/app/topics/{{topic.code}}">
-         <p class="text-center">{{topic.name}}</p>
+      <ion-item ng-repeat="topic in topics" href="#/topics/{{topic.id}}">
+         {{topic.name}}
       </ion-item>
-      <ion-item href="#/app/topics/create">
+      <ion-item href="#/topics/create">
          <p class="text-center"> Crear</p>
       </ion-item>
     </ion-list>

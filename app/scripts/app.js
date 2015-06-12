@@ -1,7 +1,32 @@
 angular.module('infoamigos', ['ionic'])
 
-.config(function($stateProvider, $urlRouterProvider) {
+.run(function($rootScope, $location, $ionicPlatform) {
+  $rootScope.getBackendUrl = function() {
+    return 'http://' + 
+    // '104.131.26.101'+
+    // '192.168.43.89'+
+    '10.42.0.1'+
+    // 'localhost' +
+     ':8080/nucleus-backend/';
+  };
+  $ionicPlatform.ready(function() {
+    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    // for form inputs)
+    if (window.cordova && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+    }
+    if (window.StatusBar) {
+      // org.apache.cordova.statusbar required
+      StatusBar.styleDefault();
+    }
+    if (navigator.splashscreen) {
+       navigator.splashscreen.hide();
+    } 
+  });
+})
 
+.config(function($stateProvider, $urlRouterProvider, $compileProvider) {
+  $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|geo|tel|local):/);
   $stateProvider
     .state('login', {
       url: "/login",
@@ -21,12 +46,7 @@ angular.module('infoamigos', ['ionic'])
       url: '/forgot',
       templateUrl: 'templates/forgot.html'
     })
-    .state('app', {
-      url: "/app",
-      abstract: true,
-      templateUrl: "templates/app.html"
-    })
-    .state('app.home', {
+    .state('home', {
       url: "/home",
       views: {
         'appContent': {
@@ -35,7 +55,7 @@ angular.module('infoamigos', ['ionic'])
         }
       }
     })
-    .state('app.topics', {
+    .state('topics', {
       url: '/topics',
       views: {
         'appContent': {
@@ -44,7 +64,7 @@ angular.module('infoamigos', ['ionic'])
         }
       }
     })
-    .state('app.profile', {
+    .state('profile', {
       url: '/profile',
       views: {
         'appContent': {
@@ -53,7 +73,7 @@ angular.module('infoamigos', ['ionic'])
         }
       }
     })
-    .state('app.places', {
+    .state('places', {
       url: '/places',
       views: {
         'appContent': {
@@ -62,16 +82,16 @@ angular.module('infoamigos', ['ionic'])
         }
       }
     })
-    .state('app.create-place', {
-      url: '/places/create',
+    .state('place-detail', {
+      url: '/place/:placeId',
       views: {
         'appContent': {
-          templateUrl: 'templates/create-place.html',
-          controller: 'CreatePlaceCtrl'
+          templateUrl: 'templates/place-detail.html',
+          controller: 'PlaceDetailCtrl'
         }
       }
     })
-    .state('app.events', {
+    .state('events', {
       url: '/events',
       views: {
         'appContent': {
@@ -80,7 +100,7 @@ angular.module('infoamigos', ['ionic'])
         }
       }
     })
-    .state('app.create-event', {
+    .state('create-event', {
       url: '/events/create',
       views: {
         'appContent': {
@@ -89,7 +109,7 @@ angular.module('infoamigos', ['ionic'])
         }
       }
     })
-    .state('app.create-topic', {
+    .state('create-topic', {
       url: "/topics/create",
       views: {
         'appContent': {
@@ -98,8 +118,8 @@ angular.module('infoamigos', ['ionic'])
         }
       }
     })
-    .state('app.topic-detail', {
-      url: "/topics/:topicId",
+    .state('topic-detail', {
+      url: '/topics/:topicId',
       views: {
         'appContent': {
           templateUrl: 'templates/topic-detail.html',
@@ -107,6 +127,16 @@ angular.module('infoamigos', ['ionic'])
         }
       }
     })
+    .state('topic-comments', {
+      url: '/topics/:topicId/post/:postId',
+      views: {
+        'appContent': {
+          templateUrl: 'templates/topic-comments.html',
+          controller: 'TopicCommentsCtrl'
+        }
+      }
+    })
+    
     ;
 
   $urlRouterProvider.otherwise("/login");
