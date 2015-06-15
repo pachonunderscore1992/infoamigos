@@ -5,8 +5,8 @@ angular.module('infoamigos', ['ionic'])
     return 'http://' + 
     // '104.131.26.101'+
     // '192.168.43.89'+
-    '10.42.0.1'+
-    // 'localhost' +
+    // '10.42.0.1'+
+    'localhost' +
      ':8080/nucleus-backend/';
   };
   $ionicPlatform.ready(function() {

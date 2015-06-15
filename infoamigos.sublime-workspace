@@ -519,6 +519,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/scripts/controllers/profile.js",
+			"settings":
+			{
+				"buffer_size": 781,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/services.js",
+			"settings":
+			{
+				"buffer_size": 6198,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/app.js",
+			"settings":
+			{
+				"buffer_size": 3523,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/C++/C++.sublime-build",
 	"build_system_choices":
@@ -618,6 +642,7 @@
 	],
 	"file_history":
 	[
+		"/home/jose/src/infoamigos/app/templates/profile.html",
 		"/home/jose/src/nucleus-backend/src/main/java/org/fabriquita/nucleus/popdb/TopicPopDb.java",
 		"/home/jose/src/infoamigos/app/scripts/app.js",
 		"/home/jose/src/nucleus-backend/src/main/java/org/fabriquita/nucleus/popdb/PostPopDb.java",
@@ -639,7 +664,6 @@
 		"/home/jose/src/infoamigos/node_modules/grunt-contrib-concat/tasks/lib/comment.js",
 		"/home/jose/src/infoamigos/platforms/android/res/xml/config.xml",
 		"/home/jose/src/infoamigos/app/scripts/controllers/profile.js",
-		"/home/jose/src/infoamigos/app/templates/profile.html",
 		"/home/jose/Desktop/res/values/strings.xml",
 		"/home/jose/src/nucleus-backend/src/main/java/org/fabriquita/nucleus/PopDB.java",
 		"/home/jose/src/infoamigos/app/scripts/controllers/place-detail.js",
@@ -1047,8 +1071,99 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/scripts/controllers/profile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 781,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								377,
+								377
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/scripts/services.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								381,
+								381
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3523,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								247,
+								247
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1109,20 +1224,28 @@
 		"selected_items":
 		[
 			[
-				"app",
-				"app/scripts/app.js"
+				"servi",
+				"app/scripts/services.js"
 			],
 			[
 				"app.",
 				"app/scripts/app.js"
 			],
 			[
-				"comment",
-				"app/scripts/controllers/topic-comments.js"
+				"prof",
+				"app/scripts/controllers/profile.js"
 			],
 			[
-				"servi",
-				"app/scripts/services.js"
+				"proi",
+				"app/templates/profile.html"
+			],
+			[
+				"app",
+				"app/scripts/app.js"
+			],
+			[
+				"comment",
+				"app/scripts/controllers/topic-comments.js"
 			],
 			[
 				"topicde",
@@ -1167,10 +1290,6 @@
 			[
 				"ser",
 				"app/scripts/services.js"
-			],
-			[
-				"prof",
-				"app/templates/profile.html"
 			],
 			[
 				"profile.js",
@@ -1615,10 +1734,6 @@
 			[
 				"deliverymar",
 				"grails-app/marshallers/com/alicanto/bicenter/marshallers/DeliveryMarshaller.groovy"
-			],
-			[
-				"customerm",
-				"grails-app/marshallers/com/alicanto/bicenter/marshallers/CustomerMarshaller.groovy"
 			]
 		],
 		"width": 0.0
